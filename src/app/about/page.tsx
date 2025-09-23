@@ -5,7 +5,7 @@ export default function AboutPage() {
         About me
       </h1>
       <article>
-        <p>
+        {/* <p>
           I was born in São Paulo and moved to{" "}
           <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
             Florianópolis
@@ -83,7 +83,7 @@ export default function AboutPage() {
           Best,
           <br />
           Luke
-        </p>
+        </p> */}
       </article>
     </>
   );
