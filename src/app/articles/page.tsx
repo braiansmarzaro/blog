@@ -32,6 +32,22 @@ export default async function ArticlesPage() {
             </span>
           </Link>
         ))}
+        <Link
+          className="flex items-center justify-between px-4 py-2 transition-transform sm:p-4 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+          key={4}
+          href={"https://www.tabnews.com.br/DeividBraian/como-eu-organizo-minha-agenda-de-uma-forma-que-funciona"}
+        >
+            <div className="flex gap-1 gap-x-2 max-sm:flex-col sm:items-center">
+              {"como eu organizo minha agenda de uma forma que funciona"}{" "}
+              <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+                <span key={"planning"}>#{"planning"}</span>
+              </span>
+            </div>
+            <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
+              {moment("2025-09-01", "YYYY-MM-DD").format("MMM/YYYY")}
+            </span>
+        </Link>
+
       </section>
     </div>
   );

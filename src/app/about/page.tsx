@@ -5,7 +5,19 @@ export default function AboutPage() {
         About me
       </h1>
       <article>
-        {/* <p>
+        { <p>
+          I was born in the suburds of
+          {" "}<a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
+            Espírito Santo
+          </a>.{" "}
+          My first 
+          {" "}<a href="https://dictionary.cambridge.org/dictionary/english/turning-point">
+            turning point 
+          </a>{" "}was when I was 14y and discovered about a good public school here...
+        </p>
+        
+        /*
+         <p>
           I was born in São Paulo and moved to{" "}
           <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
             Florianópolis

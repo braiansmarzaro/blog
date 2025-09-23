@@ -100,7 +100,10 @@ export default function HomePage() {
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-transform">
             contact@smarzaro.com
             <div className="inline-flex items-center gap-3">
-              
+              {/* TODO add copy email
+                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
+                <Copy className="size-4" />
+              </button> */}
               <a
                 href="mailto:contact@smarzaro.com"
                 className="text-zinc-800 dark:text-zinc-200"
@@ -108,9 +111,6 @@ export default function HomePage() {
                 <Send strokeWidth={1.4} className="size-4" />
               </a>
             </div>
-          </div>
-          <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-transform">
-            🇧🇷 🇬🇧 🇪🇸 🇫🇷 
           </div>
           <span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />

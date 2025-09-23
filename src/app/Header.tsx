@@ -58,6 +58,9 @@ export default function Header() {
             <span className="text-zinc-500 dark:text-zinc-400">
               AI Engineer
             </span>
+            <span>
+              🇧🇷 🇬🇧 🇫🇷 🇪🇸
+            </span>
           </div>
         </Link>
         <div className="flex items-center gap-4">

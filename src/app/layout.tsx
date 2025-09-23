@@ -62,18 +62,12 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <a
               className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/LukeberryPi/blog"
+              href="https://github.com/braiansmarzaro/blog"
               target="_blank"
             >
               Code
             </a>
-            <Link
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              target="_blank"
-              href="/rss.xml"
-            >
-              RSS Feed
-            </Link>
+            
             
           </div>
           <blockquote className="text-zinc-800 dark:text-zinc-300">

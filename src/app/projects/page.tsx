@@ -13,64 +13,22 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "css2wind",
+    name: "CNN-Big-Bang-Theory-Classifier",
     description:
-      "Learn TailwindCSS by playing a minigame: there are eight CSS properties that you must translate to the equivalent TailwindCSS utility. Bet you can't get 8/8.",
-    url: "https://css2wind.com",
-    imageUrl: "/projects/css2wind.png",
-    githubUrl: "https://github.com/LukeberryPi/css2wind",
+      "This project applied Importing, Labelling Data, Data Visualization, Data Normalization, Data Augmentation, Keras Model, Keras Early Stop CallBack, Model Saving and Prediction.",
+    url: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
+    imageUrl: "/projects/cnn_project.png",
+    githubUrl: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TypeScript
+          Python
         </span>
         <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TailwindCSS
+          Tensorflow
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Next.js
-        </span>
-      </div>
-    ),
-  },
-  {
-    name: "King's Cross Cinema Schedule",
-    description:
-      "A simpler way to visualize the movies in the Everyman in the Canal 2025 in London. I watched Mean Girls and it was amazing.",
-    url: "https://kings-cross-cinema-schedule-2025.vercel.app/",
-    imageUrl: "/projects/cinema-schedule.png",
-    githubUrl: "https://github.com/LukeberryPi/kings-cross-cinema-website",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Astro
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Tailwind
-        </span>
-        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Vercel
-        </span>
-      </div>
-    ),
-  },
-  {
-    name: "phived",
-    description:
-      "Stop procrastinating by dealing with five tasks at a time. If you want to add more tasks you need to resolve a previous one. Surprisingly effective.",
-    url: "https://phived.com",
-    imageUrl: "/projects/phived.png",
-    githubUrl: "https://github.com/LukeberryPi/phived",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          React
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
-          TailwindCSS
-        </span>
-        <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none ring-1 dark:ring-zinc-500 ring-zinc-600">
-          Vite
+          CNN
         </span>
       </div>
     ),
@@ -98,7 +56,7 @@ function ProjectCard({
         src={imageUrl}
         width={1200}
         height={630}
-        alt="Logo for css2wind website"
+        alt="Logo for Github Page"
       />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
         <a
