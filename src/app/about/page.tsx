@@ -5,16 +5,32 @@ export default function AboutPage() {
         About me
       </h1>
       <article>
-        { <p>
-          I was born in the suburds of
-          {" "}<a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
-            Espírito Santo
-          </a>.{" "}
-          My first 
-          {" "}<a href="https://dictionary.cambridge.org/dictionary/english/turning-point">
-            turning point 
-          </a>{" "}was when I was 14y and discovered about a good public school here...
-        </p>
+        { 
+          <>
+          
+          <p>
+            I was born in the suburds of
+            {" "}<a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
+              Espírito Santo
+            </a>.{" "}
+            My first
+            {" "}<a href="https://dictionary.cambridge.org/dictionary/english/turning-point">
+              turning point
+            </a>{" "}was when I was 14y and discovered about a good public school here. The Federal Institute of Espírito Santo.
+          </p>
+          <p>
+              A year of hard studying passed by, and I was able to be approved in the 2nd place for the Eletrotechnician tecnical course integrated with high-school.
+              There, I spent most of the time doing chess and sports, achieving multiple medals in the Federal Institutes competitions over the 4 years.
+          </p>
+          <p>
+            In my last year, I won the National chess competition for the Federal Institutes games. Later, I started my undergraduate course in the same campus.
+            First, I joined the Metallurgical Engineering Course, but It did not take me much time to dislike the chemistry involved, changed to the Electrical Engineering the next semester.
+            
+          </p>
+          <p>
+            To be continued...
+          </p>
+          </>
         
         /*
          <p>
