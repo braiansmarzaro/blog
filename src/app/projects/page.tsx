@@ -14,8 +14,7 @@ interface Project {
 const projects: Project[] = [
   {
     name: "CNN-Big-Bang-Theory-Classifier",
-    description:
-      "This project applied Importing, Labelling Data, Data Visualization, Data Normalization, Data Augmentation, Keras Model, Keras Early Stop CallBack, Model Saving and Prediction.",
+    description: "This project applied Importing, Labelling Data, Data Visualization, Data Normalization, Data Augmentation, Keras Model, Keras Early Stop CallBack, Model Saving and Prediction.",
     url: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
     imageUrl: "/projects/cnn_project.png",
     githubUrl: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
@@ -56,7 +55,7 @@ function ProjectCard({
         src={imageUrl}
         width={1200}
         height={630}
-        alt="Logo for Github Page"
+        alt=""
       />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
         <a
