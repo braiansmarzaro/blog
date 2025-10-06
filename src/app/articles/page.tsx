@@ -36,11 +36,14 @@ export default async function ArticlesPage() {
           className="flex items-center justify-between px-4 py-2 transition-transform sm:p-4 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
           key={4}
           href={"https://www.tabnews.com.br/DeividBraian/como-eu-organizo-minha-agenda-de-uma-forma-que-funciona"}
+          target="_blank"
+          rel="noopener noreferrer"
         >
             <div className="flex gap-1 gap-x-2 max-sm:flex-col sm:items-center">
-              {"como eu organizo minha agenda de uma forma que funciona"}{" "}
+              {"Como organizar sua agenda de uma forma funcional"}{" "}
               <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
-                <span key={"planning"}>#{"planning"}</span>
+          <span key="planning">#planning</span>
+          <span key="planning">#pt-br</span>
               </span>
             </div>
             <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
