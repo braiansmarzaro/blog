@@ -59,7 +59,7 @@ export default function Header() {
               AI Engineer
             </span>
             <span>
-              🇧🇷 🇬🇧 🇫🇷 🇪🇸
+            Spoken Languages: 🇧🇷 🇬🇧 🇫🇷 🇪🇸
             </span>
           </div>
         </Link>
