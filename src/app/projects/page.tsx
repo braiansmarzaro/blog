@@ -13,6 +13,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Book Recommender",
+    description: "Applied RAG, Vector Databases and Deployment with Docker",
+    url: "https://books.smarzaro.com",
+    imageUrl: "/projects/book-recommender.png",
+    githubUrl: "http://github.com/braiansmarzaro/book-recommender/",
+    technologies: (
+      <div className="flex items-center gap-x-3">
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          RAG
+        </span>
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Langchain
+        </span>
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          ChromaDB
+        </span>
+      </div>
+    ),
+  },
+  {
     name: "CNN-Big-Bang-Theory-Classifier",
     description: "This project applied Importing, Labelling Data, Data Visualization, Data Normalization, Data Augmentation, Keras Model, Keras Early Stop CallBack, Model Saving and Prediction.",
     url: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
@@ -32,6 +52,7 @@ const projects: Project[] = [
       </div>
     ),
   },
+
 ];
 
 function ProjectCard({
