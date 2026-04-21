@@ -87,8 +87,8 @@ export default function HomePage() {
     <div className="flex flex-col gap-6">
       <p className="text-sm">
         Brazil-based. Data Scientist with {Math.floor((Date.now() - new Date(2020, 2, 17).getTime()) / (1000 * 60 * 60 * 24 * 365.25))}+ years of experience 
-        in Python, {Math.floor((Date.now() - new Date(2021, 7, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.25))}+ years with computer vision and hands-on experience with Tensorflow, Pytorch, Docker, MLflow, SQL and Azure. 
-        Experienced in remote teams both in English and French, agile methodologies and research. 
+        in Python, {Math.floor((Date.now() - new Date(2021, 3, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.25))}+ years in classical machine learning systems and hands-on experience
+        with Production-ready AI, Enterprise RAG, Multi-agent systems, LLMOps, SQL and Cloud. Experienced in remote teams both in English and French, agile methodologies and research.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="flex flex-col gap-2">
           <a
             href="/deivid-cv.pdf"
-            download="deivid-CV.pdf"
+            download="Resume_Deivid_AI_Engineer.pdf"
             className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Do not download my CV</span>
