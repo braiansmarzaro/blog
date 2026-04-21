@@ -1,11 +1,13 @@
+"use client";
+
 import {
   SiGithub,
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import { ArrowUpRight, Download, Send } from "lucide-react";
+import { ArrowUpRight, Check, Copy, Download } from "lucide-react";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 const XLogo = () => {
   return (
@@ -83,6 +85,14 @@ const ExternalLink = (link: Link) => {
 };
 
 export default function HomePage() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("contact@smarzaro.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
@@ -100,16 +110,17 @@ export default function HomePage() {
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-transform">
             contact@smarzaro.com
             <div className="inline-flex items-center gap-3">
-              {/* TODO add copy email
-                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
-                <Copy className="size-4" />
-              </button> */}
-              <a
-                href="mailto:contact@smarzaro.com"
+              <button
+                onClick={handleCopy}
                 className="text-zinc-800 dark:text-zinc-200"
+                title={copied ? "Copied!" : "Copy email"}
               >
-                <Send strokeWidth={1.4} className="size-4" />
-              </a>
+                {copied ? (
+                  <Check strokeWidth={1.4} className="size-4 text-green-500" />
+                ) : (
+                  <Copy strokeWidth={1.4} className="size-4" />
+                )}
+              </button>
             </div>
           </div>
           <span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
