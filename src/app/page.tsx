@@ -7,7 +7,7 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Check, Copy, Download } from "lucide-react";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 const XLogo = () => {
   return (
@@ -84,8 +84,39 @@ const ExternalLink = (link: Link) => {
   );
 };
 
+const STATUS_LABELS = [
+  "Creating",
+  "Online",
+  "Building",
+  "Deploying",
+  "Shipping",
+  "Debugging",
+  "Learning",
+  "Planning",
+  "Cooking",
+  "Lifting",
+  "Traveling",
+  "Presenting",
+  "Teaching"
+];
+const STATUS_INTERVAL_MS = 5000;
+
 export default function HomePage() {
   const [copied, setCopied] = useState(false);
+  const [statusIndex, setStatusIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStatusIndex((prev) => {
+        let next: number;
+        do {
+          next = Math.floor(Math.random() * STATUS_LABELS.length);
+        } while (next === prev);
+        return next;
+      });
+    }, STATUS_INTERVAL_MS);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("contact@smarzaro.com");
@@ -125,7 +156,7 @@ export default function HomePage() {
           </div>
           <span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
             <div className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
-            Online
+            {STATUS_LABELS[statusIndex]}
           </span>
         </div>
         <div className="flex flex-col gap-2">
