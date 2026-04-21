@@ -13,6 +13,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "HemoTwin",
+    description: "Applied Computer Vision + Digital Twins + Git\n This project was created improve the blood donation system by calculating the waiting time in real-time and sharing the estimated time, so people would be encouraged to donate more blood",
+    url: "https://youtu.be/GGNz7ynyP-g",
+    imageUrl: "/projects/hemotwin.png",
+    githubUrl: "https://github.com/All-in4good/camera",
+    technologies: (
+      <div className="flex items-center gap-x-3">
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Computer Vision (AI)
+        </span>
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          YOLO
+        </span>
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Real-time communication
+        </span>
+      </div>
+    ),
+  },
+  {
     name: "Book Recommender",
     description: "Applied RAG, Vector Databases and Deployment with Docker",
     url: "https://books.smarzaro.com",
@@ -27,7 +47,7 @@ const projects: Project[] = [
           Langchain
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
-          ChromaDB
+          Vector Databases
         </span>
       </div>
     ),
@@ -70,7 +90,7 @@ function ProjectCard({
         {technologies}
       </div>
       <div>
-        <p className="p-4">{description}</p>
+        <p className="p-4 whitespace-pre-line">{description}</p>
       </div>
       <Image
         src={imageUrl}
