@@ -97,7 +97,14 @@ const STATUS_LABELS = [
   "Lifting",
   "Traveling",
   "Presenting",
-  "Teaching"
+  "Writing",
+  "Teaching",
+  "Solving",
+  "Designing",
+  "Researching",
+  "Experimenting",
+  "Growing",
+  "Iterating"
 ];
 const STATUS_INTERVAL_MS = 5000;
 
