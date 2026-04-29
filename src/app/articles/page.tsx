@@ -34,6 +34,23 @@ export default async function ArticlesPage() {
         ))}
         <Link
           className="flex items-center justify-between px-4 py-2 transition-transform sm:p-4 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+          key={5}
+          href={"https://www.linkedin.com/pulse/what-all-in-deivid-smarzaro-q1khf/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+            <div className="flex gap-1 gap-x-2 max-sm:flex-col sm:items-center">
+              {"What is All In?"}{" "}
+              <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <span key="all-in">#all-in</span>
+              </span>
+            </div>
+            <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
+              {moment("2026-04-29", "YYYY-MM-DD").format("MMM/YYYY")}
+            </span>
+        </Link>
+        <Link
+          className="flex items-center justify-between px-4 py-2 transition-transform sm:p-4 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
           key={4}
           href={"https://www.tabnews.com.br/DeividBraian/como-eu-organizo-minha-agenda-de-uma-forma-que-funciona"}
           target="_blank"
