@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
-import Script from "next/script";
-import dynamic from "next/dynamic";
+import Header from "./Header";
+import { ThemeScript } from "./theme-script";
 // import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -17,9 +16,6 @@ const karla = Karla({
   weight: "400",
 });
 
-// https://www.reddit.com/r/nextjs/comments/1bhfikg/comment/kxwj9ou/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-const Header = dynamic(() => import("./Header"), { ssr: false });
-
 export default function RootLayout({
   children,
 }: {
@@ -28,28 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-screen" suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const theme = localStorage.getItem('theme');
-                  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-                  if (theme === 'dark' || (!theme && systemPrefersDark)) {
-                    document.documentElement.classList.add('dark');
-                  } else {
-                    document.documentElement.classList.remove('dark');
-                  }
-                } catch (e) {
-                  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.documentElement.classList.add('dark');
-                  }
-                }
-              })();
-            `,
-          }}
-        />
+        <ThemeScript />
       </head>
       <body className={`${karla.className} min-h-full px-6`}>
         {/*<Analytics />*/}

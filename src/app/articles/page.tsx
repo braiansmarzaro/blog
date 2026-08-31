@@ -60,7 +60,7 @@ export default async function ArticlesPage() {
               {"Como organizar sua agenda de uma forma funcional"}{" "}
               <span className="flex gap-2 text-sm text-zinc-500 dark:text-zinc-400">
           <span key="planning">#planning</span>
-          <span key="planning">#pt-br</span>
+          <span key="pt-br">#pt-br</span>
               </span>
             </div>
             <span className="text-zinc-500 max-sm:text-sm dark:text-zinc-400">
