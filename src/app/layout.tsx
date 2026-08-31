@@ -27,7 +27,7 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body className={`${karla.className} min-h-full px-6`}>
-        {/*<Analytics />*/}
+        <Analytics />
         <Header />
         <main className="mx-auto max-w-prose pb-4">
           {children}
