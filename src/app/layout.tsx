@@ -4,7 +4,7 @@ import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import Header from "./Header";
 import { ThemeScript } from "./theme-script";
-// import { Analytics } from "@vercel/analytics/next";
+ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Deivid Smarzaro",
