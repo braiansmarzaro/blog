@@ -122,11 +122,11 @@ export default function Header() {
           </Link>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600 dark:ring-opacity-0"
-            href="/book"
+            href="/appointment"
             aria-label="Book a consultation"
-            aria-current={path === "/book" ? "page" : undefined}
+            aria-current={path === "/appointment" ? "page" : undefined}
           >
-            /book
+            /appointment
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"

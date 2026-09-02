@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Paid booking setup
 
-The `/book` page embeds a Cal.com event. To enable it:
+The `/appointment` page embeds a Cal.com event. To enable it:
 
 1. Create a 60-minute event in Cal.com.
 2. Connect Stripe in **Apps > Stripe** and set the event price to **R$200** with payment required to book.

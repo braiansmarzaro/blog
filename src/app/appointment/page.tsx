@@ -15,7 +15,7 @@ function getEmbedUrl(url: string) {
   return embedUrl.toString();
 }
 
-export default function BookPage() {
+export default function AppointmentPage() {
   return (
     <div className="flex flex-col gap-8">
       <div className="text-center">
