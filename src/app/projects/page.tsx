@@ -1,13 +1,18 @@
-import { GitBranch, Globe } from "lucide-react";
+import { GitBranch, Globe, Newspaper, Play, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 import { ReactNode } from "react";
+
+interface ProjectAction {
+  label: string;
+  url: string;
+  icon: LucideIcon;
+}
 
 interface Project {
   name: string;
   description: string;
   imageUrl: string;
-  githubUrl?: string;
-  url: string;
+  actions: ProjectAction[];
   technologies: ReactNode;
 }
 
@@ -16,10 +21,16 @@ const projects: Project[] = [
     name: "DriDoces",
     description:
       "An artisan sweets storefront showcasing cakes and custom creations with direct ordering through WhatsApp.",
-    url: "https://dridoces.vercel.app/",
     imageUrl: "/projects/dridoces.png",
+    actions: [
+      {
+        label: "Visit website",
+        url: "https://dridoces.vercel.app/",
+        icon: Globe,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Digital Storefront
         </span>
@@ -36,10 +47,16 @@ const projects: Project[] = [
     name: "Compliance Eagle",
     description:
       "Monitor supplier compliance by CNPJ, category, and status from a focused operational dashboard.",
-    url: "https://eagle.smarzaro.com/",
     imageUrl: "/projects/compliance-eagle.png",
+    actions: [
+      {
+        label: "Visit website",
+        url: "https://eagle.smarzaro.com/",
+        icon: Globe,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Compliance
         </span>
@@ -56,10 +73,16 @@ const projects: Project[] = [
     name: "Subnet Studio",
     description:
       "Plan IPv4 address space visually by splitting CIDR blocks into a clear subnet allocation tree.",
-    url: "https://subnetstudio.smarzaro.com/",
     imageUrl: "/projects/subnet-studio.png",
+    actions: [
+      {
+        label: "Visit website",
+        url: "https://subnetstudio.smarzaro.com/",
+        icon: Globe,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           IPv4
         </span>
@@ -76,11 +99,21 @@ const projects: Project[] = [
     name: "HemoTwin",
     description:
       "Applied Computer Vision + Digital Twins + Git\n This project was created improve the blood donation system by calculating the waiting time in real-time and sharing the estimated time, so people would be encouraged to donate more blood",
-    url: "https://youtu.be/GGNz7ynyP-g",
     imageUrl: "/projects/hemotwin.png",
-    githubUrl: "https://github.com/All-in4good/camera",
+    actions: [
+      {
+        label: "Visit news",
+        url: "https://www.bentley.com/en/news/ai-powered-blood-donation-room-monitoring-project-wins-the-2023-enactus-brazil-and-bentley-systems-itwin4good-challenge/",
+        icon: Newspaper,
+      },
+      {
+        label: "Watch pitch",
+        url: "https://youtu.be/GGNz7ynyP-g",
+        icon: Play,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Computer Vision (AI)
         </span>
@@ -96,11 +129,21 @@ const projects: Project[] = [
   {
     name: "Book Recommender",
     description: "Applied RAG, Vector Databases and Deployment with Docker",
-    url: "https://books.smarzaro.com",
     imageUrl: "/projects/book-recommender.png",
-    githubUrl: "http://github.com/braiansmarzaro/book-recommender/",
+    actions: [
+      {
+        label: "Visit website",
+        url: "https://books.smarzaro.com",
+        icon: Globe,
+      },
+      {
+        label: "View code",
+        url: "http://github.com/braiansmarzaro/book-recommender/",
+        icon: GitBranch,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           RAG
         </span>
@@ -117,12 +160,16 @@ const projects: Project[] = [
     name: "CNN-Big-Bang-Theory-Classifier",
     description:
       "This project applied Importing, Labelling Data, Data Visualization, Data Normalization, Data Augmentation, Keras Model, Keras Early Stop CallBack, Model Saving and Prediction.",
-    url: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
     imageUrl: "/projects/cnn_project.png",
-    githubUrl:
-      "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
+    actions: [
+      {
+        label: "View code",
+        url: "https://github.com/braiansmarzaro/CNN-Big-Bang-Theory-Classifier",
+        icon: GitBranch,
+      },
+    ],
     technologies: (
-      <div className="flex items-center gap-x-3">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Python
         </span>
@@ -141,37 +188,40 @@ function ProjectCard({
   name,
   description,
   imageUrl,
-  githubUrl,
-  url,
+  actions,
   technologies,
 }: Project) {
   return (
-    <div className="dark:zinc-500 flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-600 dark:ring-zinc-500">
-      <div className="flex items-center justify-between gap-4 p-4 max-sm:flex-col">
+    <div className="flex h-full flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-600 dark:divide-zinc-500 dark:ring-zinc-500">
+      <div className="flex flex-col items-start gap-4 p-4">
         <h2 className="text-xl">{name}</h2>
         {technologies}
       </div>
-      <div>
+      <div className="grow">
         <p className="whitespace-pre-line p-4">{description}</p>
       </div>
-      <Image src={imageUrl} width={1200} height={630} alt="" />
-      <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
-        <a
-          href={url}
-          target="_blank"
-          className="flex grow items-center justify-center gap-2 py-4 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
-        >
-          <Globe strokeWidth={1.4} className="size-5" /> Visit website
-        </a>
-        {githubUrl && (
+      <Image
+        src={imageUrl}
+        width={1200}
+        height={630}
+        sizes="(min-width: 1024px) 405px, (min-width: 768px) calc(50vw - 2.5rem), calc(100vw - 3rem)"
+        loading="eager"
+        className="aspect-[40/21] w-full object-cover object-top"
+        alt=""
+      />
+      <div className="grid w-full grid-flow-col auto-cols-fr divide-x divide-zinc-400 dark:divide-zinc-500">
+        {actions.map(({ label, url, icon: Icon }) => (
           <a
-            href={githubUrl}
+            key={url}
+            href={url}
             target="_blank"
-            className="flex grow items-center justify-center gap-2 py-4 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+            rel="noopener noreferrer"
+            className="flex min-h-12 min-w-0 items-center justify-center gap-2 px-3 py-3 text-center text-sm transition-colors sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
           >
-            <GitBranch strokeWidth={1.4} className="size-5" /> View code
+            <Icon strokeWidth={1.4} className="size-4 shrink-0" />
+            <span>{label}</span>
           </a>
-        )}
+        ))}
       </div>
     </div>
   );
@@ -179,15 +229,15 @@ function ProjectCard({
 
 export default function ProjectsPage() {
   return (
-    <>
+    <div className="relative left-1/2 w-[calc(100vw-3rem)] max-w-7xl -translate-x-1/2">
       <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
         Projects
       </h1>
-      <div className="space-y-20">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <ProjectCard key={project.url} {...project} />
+          <ProjectCard key={project.name} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
