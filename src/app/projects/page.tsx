@@ -18,6 +18,32 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Career Counseling Program",
+    description:
+      "A professional website presenting Eduardo Matsushita's career counseling services for CEOs, executives, and entrepreneurs.",
+    imageUrl: "/projects/career-counseling-eduardo-matsushita.png",
+    actions: [
+      {
+        label: "Visit website",
+        url: "https://ceo-careercounseling-edu-matsushita.smarzaro.com/",
+        icon: Globe,
+      },
+    ],
+    technologies: (
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
+          Career Counseling
+        </span>
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
+          Next.js
+        </span>
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
+          Responsive Design
+        </span>
+      </div>
+    ),
+  },
+  {
     name: "DriDoces",
     description:
       "An artisan sweets storefront showcasing cakes and custom creations with direct ordering through WhatsApp.",
