@@ -87,7 +87,7 @@ const projects: Project[] = [
           Compliance
         </span>
         <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
-          CNPJ
+          Next.js
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Supplier Monitoring
@@ -113,7 +113,7 @@ const projects: Project[] = [
           IPv4
         </span>
         <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
-          CIDR
+          Next.js
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 ring-1 ring-zinc-600 dark:bg-inherit dark:text-zinc-200 dark:ring-zinc-500">
           Network Planning
