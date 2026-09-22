@@ -5,7 +5,7 @@ import {
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
-import { ArrowUpRight, Check, Copy, Download } from "lucide-react";
+import { ArrowUpRight, Check, Copy, Download, Languages } from "lucide-react";
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
 
@@ -59,6 +59,12 @@ const externalLinks: Link[] = [
     description: "Steal my code",
     url: "https://github.com/braiansmarzaro",
     icon: <SiGithub />,
+  },
+  {
+    name: "Preply - 70% OFF Language lesson",
+    description: "Learn a new language with Preply",
+    url: "https://preply.com/en/?pref=MzMyNTM2MjY=&id=1790014280.802349&ep=w1",
+    icon: <Languages className="text-[#FF7AAC] dark:text-zinc-200" />,
   },
 ];
 
